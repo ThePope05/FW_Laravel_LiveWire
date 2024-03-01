@@ -23,7 +23,7 @@ class Filter extends Component
     public function render()
     {
         return view('livewire.filter', [
-            'users' => User::where('name', 'like', '%' . $this->search . '%')->paginate(10),
+            'users' => User::where('name', 'like', '%' . $this->search . '%')->paginate(30),
         ]);
     }
 }
