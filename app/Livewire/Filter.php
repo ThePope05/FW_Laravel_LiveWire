@@ -12,9 +12,6 @@ class Filter extends Component
     public function refreshPage()
     {
         $this->render();
-        // return view('welcome', [
-        //     'users' => User::where('name', 'like', '%' . $this->search . '%')->paginate(10),
-        // ]);
     }
 
     public function resetFilter()

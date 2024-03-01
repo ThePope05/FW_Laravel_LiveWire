@@ -16,7 +16,7 @@
 </head>
 
 <body class="bg-slate-900 flex flex-col">
-    <livewire:userPage />
+    <livewire:filter />
 
     @livewireScripts
 </body>
