@@ -1,7 +1,7 @@
 <div class="flex flex-col justify-evenly">
     <div class="flex flex-row justify-evenly mb-6">
         <label for="filter" class="text-lg font-bold text-slate-200">Filter</label>
-        <input wire:model="search" type="text" id="filter" class="p-2 border border-slate-300 bg-transparent text-slate-200" />
+        <input wire:model="search" wire:keydown="refreshPage" type="text" id="filter" class="p-2 border border-slate-300 bg-transparent text-slate-200" />
         <button wire:click="refreshPage" class="p-2 bg-amber-600 text-white">Filter</button>
         <button wire:click="resetFilter" class="p-2 bg-red-500 text-white">Reset</button>
     </div>
